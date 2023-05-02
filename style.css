@@ -1,0 +1,307 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d3436;
+  background-image: linear-gradient(360deg, black 10%, #363538 94%);
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  justify-content: center;
+}
+
+#black {
+  color: black;
+}
+
+#about {
+  font-size: 15px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 50px;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.currentbox {
+  margin: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px 8px #21143d;
+  justify-content: center;
+}
+
+#curtex {
+  color: #2c2c30;
+  margin: 0px;
+  padding: 0px;
+}
+
+#curnum {
+  color: #2c2c30;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sdtext {
+  color: #2c2c30;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-color: #351f59;
+  background-image: linear-gradient(360deg, #351f59 10%, #432870 94%);
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 100px;
+  margin-right: 90px;
+  box-shadow: 9px 5px 8px #21143d;
+  justify-content: center;
+}
+
+.main2 {
+  background-color: #351f59;
+  background-image: linear-gradient(360deg, #141138 10%, #2d257d 94%);
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 100px;
+  margin-right: 90px;
+  box-shadow: 9px 5px 8px #21143d;
+  justify-content: center;
+}
+
+.main3 {
+  background-color: #351f59;
+  background-image: linear-gradient(360deg, #141a5c 10%, #3942a8 94%);
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 100px;
+  margin-right: 90px;
+  box-shadow: 9px 5px 8px #141a5c
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 40px;
+  float: left;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+img:hover{
+  filter: drop-shadow(0 0 2px white);
+  transform: scale(1.2);
+}
+img{
+  transition: all 0.3s ease;
+  position: fixed;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+button {
+  font-weight: bolder;
+  border-style: dotted;
+  border-color: #363640;
+  background-color: white;
+  text-decoration-color: #2c2c30;
+  margin: auto;
+  padding: 30px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+select {
+  font-weight: bolder;
+  border-style: dotted;
+  border-color: #363640;
+  background-color: white;
+  text-decoration-color: #2c2c30;
+  margin: auto;
+  padding: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+option{
+  font-size: 10px;
+}
+iframe{
+  font-weight: bolder;
+  border-style: dotted;
+  border-color: #363640;
+  background-color: white;
+  text-decoration-color: #2c2c30;
+  margin: auto;
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#widebutton{
+  font-weight: bolder;
+  border-style: dotted;
+  border-color: #363640;
+  background-color: white;
+  text-decoration-color: #2c2c30;
+  margin: auto;
+  padding: 30px;
+  padding-left: 34%;
+  padding-right: 34%;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#triangle{
+  max-width: 20%;
+  position: inherit;
+  display: block; /* This is important to center the image */
+  margin: 0 auto; /* This centers the image horizontally */
+
+}
+
+#triangle:hover{
+  transform: scale(1.01);
+  transition: all .5s ease-in-out;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+@import url('https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css');
+.button-container button {
+  /* Add styles for the buttons within .button-group */
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'KaTeX_Main';
+  transition: all .5s ease-in-out;
+
+}
+
+
+.button-container button.hidden {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+
+.button-container button:hover {
+  /* Add hover styles for the buttons within .button-group */
+  background-color: #ddd;
+}
+
+.button-container button:active {
+  /* Add hover styles for the buttons within .button-group */
+  background-color: #ddd;
+
+}
+
+#info{
+  color: #2c2c30;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.main2.rainbow {
+  /* Rainbow styles */
+  background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+  box-shadow: 5px 5px 10px #ff0000,
+              5px 5px 10px #ff6600,
+              5px 5px 10px #ffff00,
+              5px 5px 10px #00ff00,
+              5px 5px 10px #0000ff,
+              5px 5px 10px #6600ff,
+              5px 5px 10px #ff00ff;
+  animation: rotate-rainbow 3s linear infinite;
+}
+
+.rainbow-shadow {
+  /* Box shadow styles */
+
+}
+
+@keyframes rotate-rainbow {
+  0% {
+    box-shadow: 5px 5px 10px #ff0000,
+                5px 5px 10px #ff6600,
+                5px 5px 10px #ffff00,
+                5px 5px 10px #00ff00,
+                5px 5px 10px #0000ff,
+                5px 5px 10px #6600ff,
+                5px 5px 10px #ff00ff;
+  }
+  14.3% {
+    box-shadow: 5px 5px 10px #ff6600,
+                5px 5px 10px #ffff00,
+                5px 5px 10px #00ff00,
+                5px 5px 10px #0000ff,
+                5px 5px 10px #6600ff,
+                5px 5px 10px #ff00ff,
+                5px 5px 10px #ff0000;
+  }
+  28.6% {
+    box-shadow: 5px 5px 10px #ffff00,
+                5px 5px 10px #00ff00,
+                5px 5px 10px #0000ff,
+                5px 5px 10px #6600ff,
+                5px 5px 10px #ff00ff,
+                5px 5px 10px #ff0000,
+                5px 5px 10px #ff6600;
+  }
+  42.9% {
+    box-shadow: 5px 5px 10px #00ff00,
+                5px 5px 10px #0000ff,
+                5px 5px 10px #6600ff,
+                5px 5px 10px #ff00ff,
+                5px 5px 10px #ff0000,
+                5px 5px 10px #ff6600,
+                5px 5px 10px

@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Trigonometry Calculator</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Sora:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <script src="trigscript.js"> </script>
+
+</head>
+
+<body>
+  <a href="index.html"><img id="logo" src="home.png" alt="Homepage" ></a>
+  <div class="main2">
+    <h1>Basic Trigonometry Calculator</h1>
+    <p id="about"> This is a calculator for finding angles and sides of a right triangle. Press ↻ to reset. </p>
+
+
+    <div class="currentbox">
+      <p id="info">Use this Image for Reference Below</p>
+      <img id="triangle" src="Rtriangle.png" alt="">
+    <hr>
+    <p id="curtex">Input Side a:</p>
+    <h1 id="curnum">Input Value or Skip</h1>
+    <h1 id="sdtext"></h1>
+    </div>
+    <div class="row">
+      <button id="widebutton" onClick="add()"> Next </button>
+
+    </div>
+
+    <div class="row">
+      <button onClick="anum('1')">1</button>
+      <button onClick="anum('2')">2</button>
+      <button onClick="anum('3')">3</button>
+      <br>
+    </div>
+
+    <div class="row">
+      <button onClick="anum('4')">4</button>
+      <button onClick="anum('5')">5</button>
+      <button onClick="anum('6')">6</button>
+      <br>
+    </div>
+
+    <div class="row">
+      <button onClick="anum('7')">7</button>
+      <button onClick="anum('8')">8</button>
+      <button onClick="anum('9')">9</button>
+      <br>
+    </div>
+    <div class="row">
+
+      <button onClick="anum('0')">0</button>
+      <button onClick="anum('.')">.</button>
+      <button onClick="reset()"> ↻ </button>
+
+
+
+    </div>
+
+    <h1> Other: </h1>
+    <div class="row">
+
+      <button onClick="fun()">???</button>
+
+
+    </div>
+
+    <p>Theo Billings©</p>
+
+  </div>
+
+</body>
+
+</html>

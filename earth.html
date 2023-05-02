@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Earth Curvature Calculator</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Sora:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <script src="earthscript.js"> </script>
+
+</head>
+
+<body>
+  <a href="index.html"><img id="logo" src="home.png" alt="Homepage" ></a>
+  <div class="main3">
+    <h1>Earth Curvature Calculator</h1>
+    <p id="about"> This is a calculator for finding your view distance from a height. Switch measurement system below, Press ↻ to reset. </p>
+
+
+    <div class="currentbox">
+    <p id="curtex">Input Altitude in Feet:</p>
+    <h1 id="curnum">Input Value</h1>
+    <h1 id="sdtext"></h1>
+    </div>
+    <div class="row">
+      <button id="widebutton" onClick="add()"> Submit </button>
+
+    </div>
+
+    <div class="row">
+      <button onClick="anum('1')">1</button>
+      <button onClick="anum('2')">2</button>
+      <button onClick="anum('3')">3</button>
+      <br>
+    </div>
+
+    <div class="row">
+      <button onClick="anum('4')">4</button>
+      <button onClick="anum('5')">5</button>
+      <button onClick="anum('6')">6</button>
+      <br>
+    </div>
+
+    <div class="row">
+      <button onClick="anum('7')">7</button>
+      <button onClick="anum('8')">8</button>
+      <button onClick="anum('9')">9</button>
+      <br>
+    </div>
+    <div class="row">
+
+      <button onClick="anum('0')">0</button>
+      <button onClick="anum('.')">.</button>
+      <button onClick="reset()"> ↻ </button>
+
+
+
+    </div>
+
+    <h1> Other: </h1>
+    <div class="row">
+      <button id="swapper"onClick="swapper()">Switch to Metric</button>
+
+    </div>
+    <hr>
+    <h1> What's my Altitude? </h1>
+    <p>Use this site to find what your current elevation is.</p>
+    <p> Note that this doesn't automatically change measurement systems.</p>
+    <div class="row">
+
+
+      <iframe src="https://whatismyelevation.com/" name="altitudeIFrame" height="100%"></iframe>
+
+    </div>
+
+    <p>Theo Billings©</p>
+
+  </div>
+
+</body>
+
+</html>
