@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Calculators</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="homestyle.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Sora:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <script src="homescript.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="main">
+    <h1>Calculators</h1>
+    <p id="about"> Select a Calculator Below! </p>
+    <hr class="bar">
+
+    <div class="overlay"></div>
+    <div class="selectorBox">
+      <div class="row">
+        <button class="selector" onClick="showButtons('geometry')"> Geometry</button>
+        <button class="selector active" onClick="showButtons('statistics')"> Statistics</button>
+        <button class="selector" onClick="showButtons('graphing')"> Graphing</button>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Statistics -->
+      <button class="statistics data-class" onClick="handleClick('sd.html')"> Standard Deviation</button>
+
+      <!-- Graphing -->
+      <button class="graphing data-class" onClick="handleClick('distance.html')"> Graph Distance & Midpoint</button>
+
+      <!-- Geometry -->
+      <button class="geometry data-class" onClick="handleClick('arclength.html')"> Arc Section Length & Area </button>
+      <button class="geometry data-class" onClick="handleClick('trig.html')"> Basic Trigonometry</button>
+
+    </div>
+    <div class="row">
+      <!-- Statistics -->
+
+
+      <!-- Graphing -->
+
+
+      <!-- Geometry -->
+      <button class="geometry data-class" onClick="handleClick('earth.html')">Earth Curvature</button>
+      <button class="geometry data-class" onClick="handleClick('regpol.html')">Regular Polygons</button>
+
+    </div>
+    <div class="row">
+      <!-- Statistics -->
+
+
+      <!-- Graphing -->
+
+
+      <!-- Geometry -->
+      <button class="geometry data-class" onClick="handleClick('3dshapes.html')">3D Shapes</button>
+      <button id="fun-button">???</button>
+
+    </div>
+
+
+    <p>Theo Billings©</p>
+    <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Homebutton icon created by Freepik - Flaticon</a>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
